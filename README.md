@@ -44,6 +44,7 @@ The code found in the `code/` directory is organized as follows:
 - **`recorder_ecg_mpu`**: for recording data from ecg and mpu devices as described in the docs. A custom device is required from receiving the data with this program.
 - **`safely_merge_dataset`**: for merging different `source/` folders contents. Merge the .tsv files (non motion) data that have the same filename(like for scans.tsv).
 - **`annotate_dataset`**: calls the `annotate_dataset` function with a specified path. Annotate the source dataset at that path adding BIDS metadata files.
+- **`dataset_utils.py`**: contains a collection of functions and variables referenced by the others python programs in `code/`.
 - **`audio_and_video_utilities/`**: contains some utilities used for trubleshooting when recording audio and video, with code for printing the indexes of audio and video devices, and the supported resolution of video devices.
 - **`dataset_description_files_templates/`**: contains code that can be used for the creation of a `dataset_description.json` file.
 
@@ -51,4 +52,4 @@ The code found in the `code/` directory is organized as follows:
 ## 4. Getting started
 In order to record data is necessary to create the `sourcedata/source` directory since the data will be saved here.  
 The easiest way to do that is by adding a new participant using `participant_adder.py` or by doing a recording using the participant "sub-00" from `commander.py`.  
-A dataset_description.json file in the repository root is required for BIDS compatibility and testing the repository folder on [Bids Validator](https://bids-standard.github.io/bids-validator/), it can be produced using the code in `code/dataset_description_files_templates`.
+A `dataset_description.json` file in the repository root is required for BIDS compatibility and testing the repository folder on [Bids Validator](https://bids-standard.github.io/bids-validator/), it can be produced using the code in `code/dataset_description_files_templates`.
