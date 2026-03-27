@@ -52,4 +52,4 @@ The code found in the `code/` directory is organized as follows:
 ## 4. Getting started
 In order to record data is necessary to create the `sourcedata/source` directory since the data will be saved here.  
 The easiest way to do that is by adding a new participant using `participant_adder.py` or by doing a recording using the participant "sub-00" from `commander.py`.  
-A `dataset_description.json` file in the repository root is required for BIDS compatibility and testing the repository folder on [Bids Validator](https://bids-standard.github.io/bids-validator/), it can be produced using the code in `code/dataset_description_files_templates`.
+A `dataset_description.json` file in the repository root is required for BIDS compatibility and testing the repository folder on [Bids Validator](https://bids-standard.github.io/bids-validator/), it can be produced using the code in `code/dataset_description_files_templates`. In the root of the repository save a dataset description for a "study" dataset.
