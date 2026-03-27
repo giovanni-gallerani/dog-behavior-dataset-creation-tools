@@ -1,0 +1,86 @@
+# Dataset Structure
+```
+DOG_BEHAVIOR_STUDY_DATASET
+  dataset_description.json
+  README.md
+  CITATION.cff
+  LICENSE
+  CHANGES
+  code/
+  sourcedata/
+    source/
+      participants.tsv
+      participants.json
+      sessions.json
+      scans.json
+      sub-01/
+        sub-01_sessions.tsv
+        ses-scens01/
+          sub-01_ses-scens01_scans.tsv
+          video/
+            sub-01_ses-scens01_task-treat_run-1_recording-cam1_video.mp4
+            sub-01_ses-scens01_task-treat_run-1_recording-cam2_video.mp4
+            sub-01_ses-scens01_task-treat_run-1_recording-cam3_video.mp4
+            sub-01_ses-scens01_task-treat_run-1_recording-cam4_video.mp4
+          audio/ 
+            sub-01_ses-scens01_task-treat_run-1_recording-micdog_audio.wav
+            sub-01_ses-scens01_task-treat_run-1_recording-micowner_audio.wav
+          physio/  
+            sub-01_ses-scens01_task-treat_run-1_recording-ecg_physio.tsv.gz
+            sub-01_ses-scens01_task-treat_run-1_recording-ecg_physio.json
+          motion/
+            sub-01_ses-scens01_task-treat_tracksys-mpu_run-1_motion.tsv
+            sub-01_ses-scens01_task-treat_tracksys-mpu_run-1_motion.json
+            sub-01_ses-scens01_task-treat_tracksys-mpu_run-1_channels.tsv
+  derivatives/
+```
+
+# Example with derivatives (for future developments)
+```
+DOG_BEHAVIOR_STUDY_DATASET
+  dataset_description.json
+  README.md
+  CITATION.cff
+  LICENSE
+  CHANGES
+  sourcedata
+    source
+      participants.tsv
+      participants.json
+      sessions.json
+      scans.json
+      sub-01
+        sub-01_sessions.tsv
+        ses-scens01
+          sub-01_ses-scens01_scans.tsv
+          video
+            sub-01_ses-scens01_task-treat_run-1_recording-cam1_video.mp4
+            sub-01_ses-scens01_task-treat_run-1_recording-cam2_video.mp4
+            sub-01_ses-scens01_task-treat_run-1_recording-cam3_video.mp4
+            sub-01_ses-scens01_task-treat_run-1_recording-cam4_video.mp4
+          audio  
+            sub-01_ses-scens01_task-treat_run-1_recording-micdog_audio.wav
+            sub-01_ses-scens01_task-treat_run-1_recording-micowner_audio.wav
+          physio  
+            sub-01_ses-scens01_task-treat_run-1_recording-ecg_physio.tsv.gz
+            sub-01_ses-scens01_task-treat_run-1_recording-ecg_physio.json
+          motion
+            sub-01_ses-scens01_task-treat_tracksys-mpu_run-1_motion.tsv
+            sub-01_ses-scens01_task-treat_tracksys-mpu_run-1_motion.json
+            sub-01_ses-scens01_task-treat_tracksys-mpu_run-1_channels.tsv
+  derivatives
+    expert_annotations
+      dataset_description.json
+        sub-01
+          ses_scen01
+            beh
+              sub-01_ses-scen01_task-treat_run-1_desc-expertlabel01_beh.tsv
+              sub-01_ses-scen01_task-treat_run-1_desc-expertlabel01_beh.json
+              
+    keypoint_detection_anypose
+      dataset_description.json
+        sub-01
+          ses_scen01
+            motion
+              sub-01_ses-scen01_task-treat_tracksys-anypose_run-1_recording-keypoints_motion.tsv
+```

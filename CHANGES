@@ -1,0 +1,7 @@
+1.0.1 2026-03-27
+  - Release of the dataset creation tools on GitHub.
+  - Fixed some typos in the metadata by editing the code in dataset_utils.py.
+  - Fixed an error in the motion metadata, the row for timestamp was absent.
+
+1.0.0 2026-03-03
+  - Presentation of the dataset structure and data acquisition framework at TUAT.
